@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yasuhiko Onishi's Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f0f4f8, #ffffff);
+      color: #2c3e50;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .left, .right {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .left {
+      flex: 1 1 300px;
+      min-width: 280px;
+    }
+    .right {
+      flex: 2 1 600px;
+      min-width: 300px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-size: 1.5em;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+    h3 {
+      margin-top: 20px;
+      color: #2980b9;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #1abc9c;
+    }
+    .icon {
+      margin-right: 8px;
+      color: #2980b9;
+    }
+    .lang-switch {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+    .lang-switch button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+    .lang-switch button:hover {
+      background-color: #1abc9c;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lang-switch">
+    <button onclick="window.location.href='index.html'">日本語</button>
+  </div>
+
+  <div class="container">
+    <div class="left">
+      <header>
+        <h1>Yasuhiko Onishi</h1>
+        <p>Cloud & Process Improvement Engineer</p>
+      </header>
+
+      <section>
+        <h2>Basic Information</h2>
+        <ul>
+          <li><i class="fas fa-map-marker-alt icon"></i>Abiko City, Chiba, Japan</li>
+          <li><i class="fas fa-envelope icon"></i><a href="mailto:yasuhiko.onishi.qa@hitachi.com">yasuhiko.onishi.qa@hitachi.com</a></li>
+          <li><i class="fab fa-github icon"></i><a href="https://yasuhikoonishi.github.io/my-portfolio/" target="_blank">GitHub</a></li>
+          <li><i class="fab fa-linkedin icon"></i><a href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a></li>
+          <li><i class="fas fa-globe icon"></i><a href="https://yourdomain.dev" target="_blank">yourdomain.dev</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <h3>Cloud / Infrastructure</h3>
+        <ul>
+          <li>AWS (Portal experience only; familiar with S3, Lambda, API Gateway, etc. / CLF certified, currently studying for SAA)</li>
+          <li>Azure (Portal experience only; familiar with Functions, Storage, CDN, etc. / AZ-104 certified)</li>
+          <li>IaC (Bicep / Terraform: conceptual understanding and basic testing)</li>
+        </ul>
+        <h3>Languages / Tools</h3>
+        <ul>
+          <li>HTML, CSS, PowerShell, CMD, VBScript</li>
+          <li>GitHub Actions, IaC (Bicep / Terraform)</li>
+          <li>Power Automate for Desktop</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Certifications & Achievements</h2>
+        <ul>
+          <li>Microsoft Azure Administrator Associate (AZ-104)</li>
+          <li>AWS Certified Cloud Practitioner (CLF)</li>
+          <li>Currently studying for AWS Certified Solutions Architect – Associate (SAA)</li>
+          <li>Information Security Management Exam – Passed</li>
+          <li>TOEIC Score: 765</li>
+          <li>Applied Information Technology Engineer Exam: 69/100 (morning), 55/100 (afternoon) in Oct 2025 – Retaking in Nov 2026</li>
+          <li>Special Award – Hitachi Building Systems DX Contest (Dec 2025)</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="right">
+      <section>
+        <h2>Summary</h2>
+        <p>
+          Leveraging knowledge from national IT certifications and cloud qualifications (AWS CLF, AZ-104), I have contributed to internal tool development and process improvement. While my hands-on experience with AWS and Azure is limited to portal usage, I have a solid understanding of their services and architecture. I’m currently studying for the AWS SAA certification.
+          I am also capable of handling documentation and coordination in English.
+          Since July 2024, I have been actively learning IT fundamentals, utilizing generative AI to rapidly acquire new skills. I developed a business automation tool using an unfamiliar language, which earned a Special Award in the Hitachi Building Systems DX Contest. I have a strong passion for streamlining operations and driving digital transformation.
+        </p>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li>Graduated March 2006 – Toyohashi Nishi High School, Aichi Prefecture (General Course)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>International Experience</h2>
+        <ul>
+          <li>June–August 2014: Language Study Abroad – Ontario, Canada</li>
+          <li>January–March 2018: Volunteer Work – Tallinn, Estonia</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Work History (Summary)</h2>
+        <ul>
+          <li>Jan 2015 – Oct 2015: Konica Minolta Inc. (Temporary Staff)</li>
+          <li>Jan 2016 – Sep 2017: CRE Inc. (SES, assigned to Mitsubishi Heavy Industries)</li>
+          <li>Jun 2018 – Jun 2019: Sinfonia Technology Co., Ltd. (Temporary Staff)</li>
+          <li>Jul 2019 – Dec 2020: Sankyo Co., Ltd.</li>
+          <li>Jan 2021 – Present: Hitachi Building Systems Co., Ltd.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Work Experience (Details)</h2>
+        <h3>Jan 2016 – CRE Inc.</h3>
+        <p>Quality control of H-II rocket software.</p>
+
+        <h3>Jul 2019 – Sankyo Co., Ltd.</h3>
+        <p>
+          Quality assurance for automotive parts.<br>
+          Handled defect response processes (on-site handling → physical inspection → root cause analysis → initial countermeasures → permanent solutions → monitoring).<br>
+          Conducted process audits of partner companies.
+        </p>
+        <h3>Jan 2021 – Hitachi Building Systems Co., Ltd.</h3>
+        <p>
+          Administrative operations.<br>
+          IT-related tasks including hardware inventory, internal tool development, and resolving Office 365-related inquiries within the office.<br>
+          Developed a business improvement tool using an unfamiliar programming language with the help of generative AI, which received a Special Award in the company’s DX Contest.
+        </p>
+      </section>
+    </div>
+  </div>
+
+</body>
+</html>
