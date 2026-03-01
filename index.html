@@ -2,128 +2,187 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>履歴書 - 優彦</title>
+  <title>優彦のモダン履歴書</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
-      font-family: Meiryo, sans-serif;
-      line-height: 1.6;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1, h2, h3 {
+      font-family: 'Noto Sans JP', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f0f4f8, #ffffff);
       color: #2c3e50;
     }
-    section {
-      margin-bottom: 30px;
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
     }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
+
+    .left, .right {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
-    li {
+
+    .left {
+      flex: 1 1 300px;
+      min-width: 280px;
+    }
+
+    .right {
+      flex: 2 1 600px;
+      min-width: 300px;
+    }
+
+    h1 {
+      font-size: 2.5em;
       margin-bottom: 5px;
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
+
+    h2 {
+      font-size: 1.5em;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+      margin-top: 30px;
     }
+
+    h3 {
+      margin-top: 20px;
+      color: #2980b9;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
     a:hover {
-      text-decoration: underline;
+      color: #1abc9c;
+    }
+
+    .icon {
+      margin-right: 8px;
+      color: #2980b9;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>優彦</h1>
-    <h2>クラウド・プロセス改善エンジニア</h2>
-  </header>
+  <div class="container">
+    <div class="left">
+      <header>
+        <h1>優彦</h1>
+        <p>クラウド・プロセス改善エンジニア</p>
+      </header>
 
-  <section>
-    <h2>基本情報</h2>
-    <ul>
-      <li>所在地: 千葉県 我孫子市</li>
-      <li>メール: <a href="mailto:yasuhi90@gmail.com">yasuhiko.onishi.qa@hitachi.com</a></li>
-      <li>GitHub: <a href="https://yasuhikoonishi.github.io/my-portfolio/" target="_blank">github.com/yourhandle</a></li>
-      <li>
-        <span style="white-space: nowrap;">
-          ポートフォリオ (The Cloud Resume Challenge): 
-          <a href="https://yourdomain.dev" target="_blank">yourdomain.dev</a>
-        </span>
-      </li>
-    </ul>
-  </section>
+      <section>
+        <h2>基本情報</h2>
+        <ul>
+          <li><i class="fas fa-map-marker-alt icon"></i>千葉県 我孫子市</li>
+          <li><i class="fas fa-envelope icon"></i><a href="mailto:yasuhiko.onishi.qa@hitachi.com">yasuhiko.onishi.qa@hitachi.com</a></li>
+          <li><i class="fab fa-github icon"></i><a href="https://yasuhikoonishi.github.io/my-portfolio/" target="_blank">GitHub</a></li>
+          <li><i class="fab fa-linkedin icon"></i><a href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a></li>
+          <li><i class="fas fa-globe icon"></i><a href="https://yourdomain.dev" target="_blank">yourdomain.dev</a></li>
+        </ul>
+      </section>
 
-  <section>
-    <h2>要約</h2>
-    <p>
-      応用情報技術者やクラウド関連資格を背景に、内部ツール開発とプロセス改善で成果。
-      AWS/Azure の基礎運用、IaC/CI/CD 導入に強み。
-      英語での調整・ドキュメント作成も対応可能。
-      Cloud Resume Challenge を通じて再現性の高い構成管理と公開運用を実践。
-    </p>
-  </section>
+      <section>
+        <h2>スキル</h2>
+        <h3>クラウド/インフラ</h3>
+        <ul>
+          <li>AWS（S3, Lambda, API Gateway, CloudFront, IAM）</li>
+          <li>Azure（Functions, Storage, CDN, Bicep/Terraform 基礎）</li>
+        </ul>
+        <h3>言語/ツール</h3>
+        <ul>
+          <li>HTML/CSS/JavaScript、PowerShell、CMD</li>
+          <li>GitHub Actions、CI/CD、IaC（Bicep/Terraform）</li>
+        </ul>
+      </section>
+    </div>
 
-  <section>
-    <h2>学歴</h2>
-    <ul>
-      <li>2006年3月 愛知県立豊橋西高等学校 普通科 卒業</li>
-    </ul>
-  </section>
+    <div class="right">
+      <section>
+        <h2>要約</h2>
+        <p>
+          応用情報技術者やクラウド関連資格を背景に、内部ツール開発とプロセス改善で成果。
+          AWS/Azure の基礎運用、IaC/CI/CD 導入に強み。
+          英語での調整・ドキュメント作成も対応可能。
+          Cloud Resume Challenge を通じて再現性の高い構成管理と公開運用を実践。
+        </p>
+      </section>
 
-  <section>
-    <h2>海外経験</h2>
-    <ul>
-      <li>2014年6月～8月 カナダ・オンタリオ州 語学留学</li>
-      <li>2018年1月～3月 エストニア共和国・タリン 海外ボランティア</li>
-    </ul>
-  </section>
+      <section>
+        <h2>学歴</h2>
+        <ul>
+          <li>2006年3月 愛知県立豊橋西高等学校 普通科 卒業</li>
+        </ul>
+      </section>
 
-  <section>
-    <h2>職務経歴（略歴）</h2>
-    <ul>
-      <li>2015年1月 コニカミノルタ株式会社（派遣社員）勤務開始 → 2015年10月 退職</li>
-      <li>2016年1月 シーアールイー株式会社 勤務開始（SESとして三菱重工業株式会社にて勤務） → 2017年9月 退職</li>
-      <li>2018年6月 シンフォニアテクノロジー株式会社（派遣社員）勤務開始 → 2019年6月 退職</li>
-      <li>2019年7月 三協株式会社 勤務開始 → 2020年12月 退職</li>
-      <li>2021年1月 株式会社日立ビルシステム 勤務開始</li>
-    </ul>
-  </section>
+      <section>
+        <h2>海外経験</h2>
+        <ul>
+          <li>2014年6月～8月 カナダ・オンタリオ州 語学留学</li>
+          <li>2018年1月～3月 エストニア共和国・タリン 海外ボランティア</li>
+        </ul>
+      </section>
 
-  <section>
-    <h2>職務経験（詳細）</h2>
-    <h3>2016年1月 シーアールイー株式会社</h3>
-    <p>H2ロケット ソフトウェアの品質管理</p>
+      <section>
+        <h2>職務経歴（略歴）</h2>
+        <ul>
+          <li>2015年1月 コニカミノルタ株式会社（派遣社員）勤務開始 → 2015年10月 退職</li>
+          <li>2016年1月 シーアールイー株式会社（SES）→ 2017年9月 退職</li>
+          <li>2018年6月 シンフォニアテクノロジー株式会社（派遣）→ 2019年6月 退職</li>
+          <li>2019年7月 三協株式会社 → 2020年12月 退職</li>
+          <li>2021年1月 株式会社日立ビルシステム 勤務開始</li>
+        </ul>
+      </section>
 
-    <h3>2019年7月 三協株式会社</h3>
-    <p>
-      自動車部品の品質保証業務。<br>
-      不具合発生時の対応プロセス（現品対応→現物確認→問題工程特定→初期対策→恒久対策→結果監視）。<br>
-      協力会社の工程監査。
-    </p>
+      <section>
+        <h2>職務経験（詳細）</h2>
+        <h3>2016年1月 シーアールイー株式会社</h3>
+        <p>H2ロケット ソフトウェアの品質管理</p>
 
-    <h3>2021年1月 株式会社日立ビルシステム</h3>
-    <p>
-      事務業務。<br>
-      IT関連業務（IT機器棚卸、ITツール作成、Office365の拠点内不明点の解消）。
-    </p>
-  </section>
+        <h3>2019年7月 三協株式会社</h3>
+        <p>
+          自動車部品の品質保証業務。<br>
+          不具合発生時の対応プロセス（現品対応→現物確認→問題工程特定→初期対策→恒久対策→結果監視）。<br>
+          協力会社の工程監査。
+        </p>
 
-  <section>
-    <h2>スキル</h2>
-    <h3>クラウド/インフラ</h3>
-    <ul>
-      <li>AWS（S3, Lambda, API Gateway, CloudFront, IAM）</li>
-      <li>Azure（Functions, Storage, CDN, Bicep/Terraform 基礎）</li>
-    </ul>
-
-    <h3>言語/ツール</h3>
-    <ul>
-      <li>HTML/CSS/JavaScript、PowerShell、CMD</li>
-      <li>GitHub Actions、CI/CD、IaC（Bicep/Terraform）</li>
-    </ul>
-  </section>
+        <h3>2021年1月 株式会社日立ビルシステム</h3>
+        <p>
+          事務業務。<br>
+          IT関連業務（IT機器棚卸、ITツール作成、Office365の拠点内不明点の解消）。
+        </p>
+      </section>
+    </div>
+  </div>
 
 </body>
 </html>
