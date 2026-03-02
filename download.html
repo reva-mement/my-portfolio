@@ -1,71 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>ツールダウンロード / Tool Downloads</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Noto Sans JP', sans-serif;
-      background: #f0f4f8;
-      margin: 0;
-      padding: 40px 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-      font-size: 2.2em;
-      margin-bottom: 40px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 24px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .card {
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .card h2 {
-      margin-top: 0;
-      color: #2980b9;
-      font-size: 1.3em;
-    }
-    .card p {
-      flex-grow: 1;
-      margin-bottom: 12px;
-      line-height: 1.6;
-    }
-    .card p.en {
-      color: #555;
-      font-size: 0.95em;
-      margin-top: 8px;
-    }
-    .card a {
-      display: inline-block;
-      margin-top: auto;
-      padding: 10px 16px;
-      background-color: #3498db;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-    .card a:hover {
-      background-color: #1abc9c;
-    }
-  </style>
-</head>
 <body>
+
+  <div class="lang-switch">
+    <button onclick="window.location.href='download.html'">日本語</button>
+    <button onclick="window.location.href='download-en.html'">English</button>
+  </div>
 
   <h1>ツール＆資料ダウンロード / Tool & Document Downloads</h1>
 
@@ -87,10 +25,8 @@
         ツールの使い方をまとめたマニュアルです。手順や注意点を図解付きで解説しています。
       </p>
       <p class="en">
-        An user manual explaining how to use the tool, including step-by-step instructions and visual guides.
+        A user manual explaining how to use the tool, including step-by-step instructions and visual guides.
       </p>
       <a href="tools/tool_manual_ja.pdf" target="_blank">▶ マニュアルを開く / View Manual</a>
     </div>
-    
-</body>
-</html>
+  </div>
